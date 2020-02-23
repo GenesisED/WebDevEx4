@@ -1,0 +1,253 @@
+            html{
+                height: 100%;
+                margin: auto;
+            }
+            body{
+                height:100%;
+                padding:0px;
+                margin:auto;
+                font-family: 'Merriweather', serif;
+            }
+            h1{
+                font-family: 'Source Sans Pro', sans-serif;
+                font-size:50px;
+                font-weight: 700;
+                color: rgb(255,255,255);
+                text-align: left;
+                text-transform: none;
+                word-spacing: 0.1em;
+                margin:auto;
+                padding: 10px;
+                padding-bottom: 0;
+                line-height:1.2em;
+            }
+
+            h2{
+                font-family: 'Source Sans Pro', sans-serif;
+                font-size:30px;
+                font-weight: 700;
+                text-align: center;
+                text-transform: none;
+                word-spacing: 0.1em;
+                margin:auto;
+                padding: 15px;
+                line-height:1.2em;
+            }
+
+            h3{
+                font-size:20px;
+                font-weight:800;
+                word-spacing: 0.1em;
+                margin:auto;
+                padding: 10px;
+                padding-bottom: 0px;
+                line-height:1.2em;
+                border-bottom: solid 1px;
+            }
+
+            h4{
+                font-size:20px;
+                font-weight:800;
+                word-spacing: 0.1em;
+                margin:0;
+                padding:0px;
+                line-height:1.2em;
+                float: left
+            }
+
+            .paragraph{
+                font-family: 'Raleway', sans-serif;
+                font-size:15px;
+                font-weight:300;
+                word-spacing: 0.1em;
+                margin:auto;
+                padding-bottom: 25px;
+                line-height:1.5em;
+            }
+
+            .date{
+                color: rgb(255,255,255);
+                font-family: 'Source Sans Pro', sans-serif;
+                font-size: 15px;
+                font-weight:300;
+                word-spacing: 0.1em;
+                height: 20px;
+                margin:0;
+                padding-top: 0;
+                padding-bottom: 32px;
+                padding-left: 10px;
+                line-height:1.5em;
+            }
+
+
+            p{
+                padding-top: 0px;
+            }
+            a{
+                text-decoration: none;
+            }
+            a:hover{
+                text-decoration: underline;
+            }
+
+            .container {
+                height: 100%;
+                background-image: url("../static/rain.jpg");
+                background-repeat: no-repeat;
+                background-size: auto;
+                background-origin: padding-box;
+                background-position: center;
+                margin: auto;
+            }
+
+            .content {
+                margin:auto;
+                max-width: 42em;
+            }
+
+            .mainContent {
+                background-color: rgb(255,255,255);
+                background-origin: content-box;
+                padding: 20px;
+                border-radius: 15px;
+            }
+
+            header{
+                font-family: Align,sans-serif;
+                font-weight: 700;
+                background-color: rgb(255,255,255);
+                padding: 5px;
+                margin: auto;
+                border: 0px;
+                height: 22px;
+                max-width: 42em;
+            }
+
+            .logo{
+                float: left;
+                width: 25px;
+                height: 20px;
+                margin-left: 0px;
+                padding-bottom: 0px;
+            }
+
+            nav {
+                float: left;
+            }
+
+            nav ul {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
+
+            nav li {
+                display: inline-block;
+                margin-left: 5px;
+                margin-right: 25px;
+                paddting-top: 25px;
+            }
+
+            nav a {
+                color: #444;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+
+            .searchTxt{
+                float:right;
+                border-radius:40px;
+            }
+
+            .searchLogo{
+                width: 20px;
+                height: 20px;
+                margin-left: 0px;
+                padding-bottom: 0px;
+            }
+
+            .searchBtn{
+                float: right;
+                justify-content: center;
+                align-content: center;
+            }
+
+            input{
+                border: 1px solid;
+                border-radius: 5px;
+            }
+
+            .signupForm {
+                background-color: rgb(255,255,255);
+                background-origin: content-box;
+                margin: auto;
+                padding: 30px;
+                border-radius: 15px;
+                max-width: 20em;
+            }
+
+            .signupForm p{
+                margin:0;
+                padding:0;
+                font-weight: bold;
+
+            }
+
+            .signupForm input{
+                width:100%;
+                margin-bottom: 20px;
+
+            }
+
+            .signupForm input[type="text"] {
+                border: none;
+                border-bottom: 1px solid;
+                border-radius: 0;
+                background: transparent;
+                outline: none;
+                height: 40px;
+                font-size: 16px;
+            }
+
+            .signupForm input[type="submit"] {
+                outline: none;
+                height:40px;
+                font-size: 18px;
+            }
+
+            .signupForm input[type="submit"]:hover {
+                cursor: pointer;
+                background: antiquewhite;
+            }
+
+            .postBlock {
+                padding: 10px;
+                border-style: dotted;
+                border-width: 3px;
+            }
+
+            .postForm {
+                background-color: rgb(255,255,255);
+                background-origin: content-box;
+                margin: auto;
+                padding: 30px;
+                border-radius: 15px;
+                max-width: 20em;
+            }
+
+            .postForm p{
+                margin:0;
+                padding:0;
+                font-weight: normal;
+
+            }
+
+            .postTitle {
+                height:25px;
+            }
+
+            .author {
+                font-size: 10px;
+                float: right;
+            }
+

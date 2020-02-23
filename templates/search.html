@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <link href="https://fonts.googleapis.com/css?family=Merriweather|Noto+Sans|Raleway|Indie+Flower|Lobster|Cinzel|Source+Sans+Pro|" rel="stylesheet">
+            <meta charset=utf-8>
+            <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='mystylesheet.css') }}">
+            <title>rain forecast blog </title>
+        </head>
+
+        <header>
+            <img src="{{ url_for('static', filename='navbar_icon.png') }}" alt="logo" class="logo">
+               <nav>
+                   <ul>
+                       <li><a href="{{ url_for('home') }}"> Home </a></li>
+                       <li><a href="{{ url_for('sigup') }}"> Sign Up </a></li>
+                       <li><a href="{{ url_for('post') }}"> Post </a></li>
+                   </ul>
+               </nav>
+            <div class="searchBox">
+                <form method="POST" action="search">
+                    <input class="searchTxt" type="search" name="search_term" placeholder=" Type to search">
+                    <button class="searchBtn" type="submit">
+                        <img src="{{ url_for('static', filename='search.jpg') }}" alt="searchLogo" class="searchLogo">
+                    </button>
+                </form>
+            </div>
+
+        </header>
+
+        <body>
+        <div class="container">
+            <br>
+            <br>
+            <div class="postForm">
+                <h2>Search Results</h2>
+                {% for result in results %}
+                    <article>
+                      <div class="postBlock">
+                        <div class="postTitle">
+                          <h4>{{ result.title }}</h4>
+                            <div class="author">
+                            <a>{{ result.author.username }}</a>
+                            <small>{{ result.date_posted.strftime('%Y-%m-%d') }}</small>
+                            </div>
+                        </div>
+                        <p>{{ result.content }}</p>
+                      </div>
+                        <br>
+                        <br>
+                    </article>
+                {% endfor %}
+            </div>
+            </div>
+        </div>
+        </body>
+    </html>

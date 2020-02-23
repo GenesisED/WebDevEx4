@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <link href="https://fonts.googleapis.com/css?family=Merriweather|Noto+Sans|Raleway|Indie+Flower|Lobster|Cinzel|Source+Sans+Pro|" rel="stylesheet">
+            <meta charset=utf-8>
+            <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='mystylesheet.css') }}">
+            <title>rain forecast blog </title>
+        </head>
+
+        <header>
+            <img src="{{ url_for('static', filename='navbar_icon.png') }}" alt="logo" class="logo">
+               <nav>
+                   <ul>
+                       <li><a href="{{ url_for('home') }}"> Home </a></li>
+                       <li><a href="{{ url_for('sigup') }}"> Sign Up </a></li>
+                       <li><a href="{{ url_for('post') }}"> Post </a></li>
+                   </ul>
+               </nav>
+            <div class="searchBox">
+                <form method="POST" action="search">
+                    <input class="searchTxt" type="search" name="search_term" placeholder=" Type to search">
+                    <button class="searchBtn" type="submit">
+                        <img src="{{ url_for('static', filename='search.jpg') }}" alt="searchLogo" class="searchLogo">
+                    </button>
+                </form>
+            </div>
+
+        </header>
+
+        <body>
+        <div class="container">
+            <br>
+            <br>
+            <div class="signupForm">
+                <h2>Sign Up</h2>
+                <form method="POST" action="">
+                    {{ form.hidden_tag() }}
+                    <p>Username</p>
+                    {{ form.username(class="form-control-label") }}<br>
+                    <p>Email Address</p>
+                    {{ form.email(class="form-control-label") }}<br>
+                    {{ form.submit(class="btn btn-outline-info") }}
+                </form>
+            </div>
+            </div>
+        </div>
+        </body>
+    </html>
